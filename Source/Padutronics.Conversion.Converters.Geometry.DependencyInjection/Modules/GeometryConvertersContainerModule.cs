@@ -9,6 +9,7 @@ public sealed class GeometryConvertersContainerModule : IContainerModule
     public void Load(IContainerBuilder containerBuilder)
     {
         RegisterPoint2ToStringConverter<sbyte>(containerBuilder);
+        RegisterPoint2ToStringConverter<short>(containerBuilder);
     }
 
     private void RegisterPoint2ToStringConverter<T>(IContainerBuilder containerBuilder)
