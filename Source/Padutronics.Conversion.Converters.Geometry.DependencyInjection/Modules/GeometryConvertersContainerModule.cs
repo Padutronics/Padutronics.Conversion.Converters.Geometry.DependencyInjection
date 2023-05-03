@@ -12,6 +12,8 @@ public sealed class GeometryConvertersContainerModule : IContainerModule
         RegisterPoint2ToStringConverter<short>(containerBuilder);
         RegisterPoint2ToStringConverter<int>(containerBuilder);
         RegisterPoint2ToStringConverter<long>(containerBuilder);
+
+        RegisterPoint2ToStringConverter<byte>(containerBuilder);
     }
 
     private void RegisterPoint2ToStringConverter<T>(IContainerBuilder containerBuilder)
