@@ -19,6 +19,7 @@ public sealed class GeometryConvertersContainerModule : IContainerModule
         RegisterPoint2ToStringConverter<ulong>(containerBuilder);
 
         RegisterPoint2ToStringConverter<float>(containerBuilder);
+        RegisterPoint2ToStringConverter<double>(containerBuilder);
     }
 
     private void RegisterPoint2ToStringConverter<T>(IContainerBuilder containerBuilder)
